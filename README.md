@@ -1,70 +1,192 @@
-# Getting Started with Create React App
+# 📧 AI Email Assistant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An AI-powered Email Assistant built using **Flask**, **React**, **Google Gemini AI**, and **Brevo API**. The application helps users generate professional emails, customize them with different tones and lengths, and send them directly from the application.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+* 🤖 AI-powered email generation using Google Gemini
+* 📝 Generate complete emails from simple prompts
+* 📌 Automatic or custom subject generation
+* 🎭 Multiple writing tones
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  * Professional
+  * Friendly
+  * Formal
+  * Casual
+* 📏 Adjustable email length
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  * Short
+  * Medium
+  * Long
+* 📧 Send generated emails directly using Brevo API
+* 📋 Copy generated email to clipboard
+* 📄 Download generated email as PDF
+* 🎨 Modern React-based user interface
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tech Stack
 
-### `npm run build`
+### Frontend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* React.js
+* JavaScript
+* HTML
+* CSS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Flask
+* Python
 
-### `npm run eject`
+### AI Model
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Google Gemini 2.5 Flash API
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Email Service
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Brevo API
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Other Libraries
 
-## Learn More
+* jsPDF
+* python-dotenv
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📂 Project Structure
 
-### Code Splitting
+```
+AI-Email-Assistant/
+│
+├── backend/
+│   ├── app.py
+│   ├── routes/
+│   ├── services/
+│   ├── prompts/
+│   ├── .env
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🚀 Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Clone the repository
 
-### Making a Progressive Web App
+```bash
+git clone https://github.com/yourusername/AI-Email-Assistant.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Backend Setup
 
-### Advanced Configuration
+```bash
+cd backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+python -m venv venv
 
-### Deployment
+venv\Scripts\activate
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+pip install -r requirements.txt
+```
 
-### `npm run build` fails to minify
+Create a `.env` file and add:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+GEMINI_API_KEY=your_gemini_api_key
+
+BREVO_API_KEY=your_brevo_api_key
+
+SENDER_EMAIL=your_verified_sender_email
+```
+
+Run the backend:
+
+```bash
+python app.py
+```
+
+---
+
+### Frontend Setup
+
+```bash
+cd frontend
+
+npm install
+
+npm start
+```
+
+---
+
+## 💡 How It Works
+
+1. User enters an email prompt.
+2. User selects task, tone, and email length.
+3. Gemini AI generates a subject and email body.
+4. The generated email is displayed in the application.
+5. Users can:
+
+   * Copy the email
+   * Download it as a PDF
+   * Send it directly through Brevo
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+
+![Home Page](screenshots/Screenshot(107).png)
+### Generated Email
+
+![Generated Email](screenshots/Screenshot(108).png)
+
+### Copy Email
+
+![Send Email](screenshots/Screenshot(109).png)
+
+### Download PDF
+
+![Download PDF](screenshots/Screenshot(110).png)
+
+### Send Email
+
+![Send Email](screenshots/Screenshot(111).png)
+
+
+
+---
+
+## 🔮 Future Enhancements
+
+* Email templates
+* Grammar checking
+* Multiple language support
+* Voice input
+* Email scheduling
+* Email history
+* User authentication
+* Rich text editor
+
+---
+
+## 👩‍💻 Author
+
+**Mahika Dachireddy**
+
+Computer Science Student | AI & Full-Stack Development Enthusiast
+
+---
+
+⭐ If you like this project, consider giving it a star on GitHub!

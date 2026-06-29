@@ -15,7 +15,14 @@ def send_email_via_brevo(to_email, subject, content):
             "name": "AI Assistant",
             "email": os.getenv("SENDER_EMAIL")
         }
-
+        formatted_content = f"""
+<html>
+<body style="font-family: Arial, sans-serif; line-height:1.6;">
+{content.replace("\n", "<br>")}
+</body>
+</html>
+"""
+        print(repr(content))
         email = sib_api_v3_sdk.SendSmtpEmail(
             to=[{"email": to_email}],
             sender=sender,
