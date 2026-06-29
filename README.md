@@ -164,6 +164,12 @@ npm start
 
 ![Send Email](screenshots/Screenshot(111).png)
 
+### Received Email
+
+![Received Email](screenshots/Screenshot(112).png)
+
+
+
 
 
 ---
