@@ -267,7 +267,7 @@ function App() {
   const sendEmail = async () => {
   try {
     // const response = await fetch("http://127.0.0.1:5000/send_email", {
-    const response = await fetch("https://ai-email-assistant-te5d.onrender.com/send_mail", {
+    const response = await fetch("https://ai-email-assistant-te5d.onrender.com/send_email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
