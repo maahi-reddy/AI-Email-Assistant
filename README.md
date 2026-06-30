@@ -143,6 +143,24 @@ npm start
 
 ---
 
+## 🌐 Live Demo
+
+**Frontend:** https://ai-email-assistant-nine.vercel.app
+
+**Backend API:** https://ai-email-assistant-te5d.onrender.com
+
+---
+
+## ⚠️ Live Demo Notice
+
+The application is fully deployed and the AI-powered email generation feature works as expected.
+
+The **Send Email** functionality is powered by the **Brevo API**. Since this project uses a free Brevo account, email sending requires the deployment server's IP address to be authorized in the Brevo dashboard. As Render may use different outbound IP addresses, the **Send Email** feature may not work in the public live demo.
+
+This is a deployment limitation of the free Brevo plan and **not an issue with the application's implementation**.
+
+To experience the complete functionality, clone the repository, configure your own API keys, authorize your server's IP address in Brevo, and run the project locally.
+
 ## 📸 Screenshots
 
 ### Home Page
