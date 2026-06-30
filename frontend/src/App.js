@@ -244,7 +244,7 @@ function App() {
     setLoading(true);
     try {
       // const response = await fetch("http://127.0.0.1:5000/generate-email", {
-      const response = await fetch("https://ai-email-assistant-te5d.onrender.com/", {
+      const response = await fetch("https://ai-email-assistant-te5d.onrender.com/generate-email", {
 
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -266,7 +266,8 @@ function App() {
   };
   const sendEmail = async () => {
   try {
-    const response = await fetch("http://127.0.0.1:5000/send_email", {
+    // const response = await fetch("http://127.0.0.1:5000/send_email", {
+    const response = await fetch("https://ai-email-assistant-te5d.onrender.com/send-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
